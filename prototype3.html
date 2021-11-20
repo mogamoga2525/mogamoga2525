@@ -1,0 +1,3605 @@
+
+
+<!-------- tabs1--------------->
+<html lang="ja">
+  <!DOCTYPE html>
+  <!-------- header-------->
+  <head>
+  <title>テストプログラム</title>
+  <!-------- meta-------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+  
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/qd_common.js' ></script>
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/data_loader.js' defer></script>
+      <!-- <script src='https://be0.dev/ez_api/ez_api/v1.3/newface_test/process_login.js' defer></script> -->
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/auto_loader.js' defer></script>
+  <link rel='stylesheet' href='https://be0.dev/ez_api/v1.3/newface_test/qd_login.css' />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+   <!-------- meta-------->
+  </head>
+  <!-------- header-------->
+  
+  
+  <!-------- body-------->
+  <body login='1'>
+  
+  
+  <!---tab-style----->
+<style>  
+  /*タブ切り替え全体のスタイル*/
+  .tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+    text-align:left;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all:checked ~ #all_content,
+  #programming:checked ~ #programming_content,
+  #design:checked ~ #design_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs input:checked + .tab_item {
+    background-color: #5ab4bd;
+    color: #fff;
+  }</style>
+<!-------- tab-------->
+<div class="tabs">
+  <input id="all" type="radio" name="tab_item" checked>
+  <label class="tab_item" for="all">総合</label>
+  <input id="programming" type="radio" name="tab_item">
+  <label class="tab_item" for="programming">プログラミング</label>
+  <input id="design" type="radio" name="tab_item">
+  <label class="tab_item" for="design">デザイン</label>
+  <div class="tab_content" id="all_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">総合の内容がここに入ります</p>
+    </div>
+  </div>
+  <div class="tab_content" id="programming_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">
+        <details>
+          <summary>Debias guide</summary>
+        
+        <p>Education<br>バイアスの存在を<br>知ることが大切。</p></br>
+        
+        <p>勉強時間の短い人や<br>継続していない人は<br>バイアスに<br>かかりやすい。</br></p>
+        
+        <p>統計学の<br>簡単な勉強などで<br>学習（勉強）の継続を<br>することが大切</br><br>自分は分かっている<br>と思ってはいけない。</br></p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>one at a time strategy <br>一個一個の選択肢を<br>一つ一つ吟味する。</br><br>想像力を働かせて<br>常に新しい視点で<br>毎回見る</br></p>
+        
+        
+        
+        
+        <form>choice A：	<input type="text" >
+        
+          <br>choice B：	<input type="text" >
+        </br>
+        </form>
+        
+        <form>choice C：	<input type="text" >
+        
+          </form>
+        
+        
+        
+        <br></br>
+        
+        <p>positive hindsight<br>自分の判断や<br>行動が間違っているんじゃないか<br>ということを<br>前向きに考えよう</br>前向きに失敗した未来を創造する。</p>
+        
+        
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <br></br>
+        
+        <p>弁証法的boot strap</p>
+        
+        <p><br>直観で判断したことと</br>直感が間違っていた時の<br>意見を決める。<br>そして、その中間をとりましょう）</br></p>
+        
+        <p>最初の直感に従った場合と、<br>最悪のケースを想定した場合に</br><br>その中間をとったときにいい決断になる。</br></p>
+        
+        
+        
+        
+        <form>insight：	<input type="text" >
+        <br>
+          worst：	<input type="text" >
+        <br>
+        </form>
+        <br>
+        <form>hunch：	<input type="text" >
+        </br>
+          </form>
+        
+        
+        
+          <form>insight：	<input type="text" >
+        <br>
+            worst：	<input type="text" >
+        <br>
+          </form>
+        <br>
+          <form>hunch：	<input type="text" >
+        </br>
+            </form>
+        
+        
+        
+            <form>insight：	<input type="text" >
+        <br>
+              worst：	<input type="text" >
+        <br>
+            </form>
+        
+            <form>hunch：	<input type="text" >
+        <br>
+              </form>
+        
+        
+        
+              <form>insight：	<input type="text" >
+        <br>
+                worst：	<input type="text" >
+        <br>
+              </form>
+        
+              <form>hunch：	<input type="text" >
+        <br>
+                </form>
+        
+        
+        
+        
+        
+                <form>insight：	<input type="text" >
+        <br>
+                  worst：	<input type="text" >
+        <br>
+                </form>
+        <br>
+                <form>hunch：	<input type="text" >
+        <br>
+                  </form>
+        
+        
+        
+        <br></br>
+        
+        <p>問題分割（自信過剰と自信過少のバイアス解決法）一つの問題を細かく分割して個別に判断していく。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <br></br>
+        
+        <p>time unpacking（細かく時間を区切って判断し、行動していく）</p>
+        
+        <p>例えば１日の行動なら１０時までにここまで、１２時までにここまでというようにする。</p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>チェックリスト（一定のアクションとルールを定めておく）</p></p>
+        
+        <p>判断ミスを激減できる。チェックリストは細かく作っておくことが重要</p>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p>インセンティブ（ご褒美）</p>
+        
+        <p>モチベーションを上げる効果あり。分かっているのにできないときつかう。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>アカウンタビリティ（周りの人がどう行動しているかわかると自分のことも分かる。）</p>
+        
+        <p>自分が出来てないことが有る場合、出来ている人のまねをする。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>計画プロンプト（日々の行動の手順を定める）</p>
+        
+        <p>だれが見ても分かるようなリストがよい。</p>
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>フォースブレイク（必ず休むタイミングを入れる。）</p>
+        
+        <p>例えば、1時間に一回休憩するなど、時間で決めてしまうとよい。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <br></br>
+        
+        <p>アドバンスドチョイス（事前判断）</p>
+        
+        <p>何かしらの決断をする場合、あらかじめどうするのか一旦決めておく。</p>
+        
+        <p>例えばつらい判断をする場面が来ると想定されるときに先にどうするか決めておく。</p>
+        
+        <p>めんどくさいと思ったとき、どうするか先に決めておくなど。</p>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+          
+        diet memo<form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Goal conflict <form> goal
+        
+        obstacle
+        
+        counterpart：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Emotional planning <form> ご感想：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        疑問型selftalk <form> 
+        
+        <p>1. ゴールを達成した際の ポジティブな側面をかき出す</p>
+        <p>2. 最も大きくポジティブな 側面の対象のイメージを強化する</p> 
+        <p>3. ゴールを達成する障壁を書き出す</p>
+        <p>4. 最も大きくネガティブな 側面の対象のイメージを強化する</p>
+        
+        <p>are you sure that you can make it?</p>
+        <p>why do you want to try it?</p>
+        <p>how do you make it?</p>
+        <p>when do you try it?</p>
+        <p>How do you make it better?</p>
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        ソクラテス式問答法 <form> 
+        
+        
+        <p>1.明確化の質問 問題の具体的ゴールは何？</p>
+        
+        <p>2.前提の質問 問題でわかってないの何？</p>
+        
+        <p>3.証拠の質問 今の答えを事実にした理由は何？</p>
+        
+        <p>4.起源の質問 考えやアイデアはどこからきた？</p>
+        
+        <p>5.結果 問題を試したらどんな結果になる？
+        </p>
+        <p>6.視点の質問 他の人はなんと言うか？</p>
+        
+        <p>7.仮定の質問 今の答えの代わりは何？</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        prep do review <form>
+        
+        <p>prep</p>
+        
+        <p>これから私は何をしようとしているのか</p>
+        
+        <p>その行動の理由、目標、目的はなにか</p>
+        
+        <p>その行動はどう行うべきか</p>
+        
+        <p>その行動にはだれがかかわるか</p>
+        
+        <p>目的を達成するのに必要な情報や人はなに</p>
+        
+        
+        <p>do 実行</p>
+        
+        
+        <p>review</p>
+        
+        <p>いつどれくらいの時間で目標を達成したか</p>
+        
+        <p>準備どおりに実行できたか</p>
+        
+        <p>目標をおえた結果、前に比べてなにが変わったか</p>
+        
+        <p>準備を実行して何かわかったことはあるか</p>
+        
+        <p>次に同じことが起きた時にもっとうまくやれることはあるか</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        </details>
+        </p>
+    </div>
+  </div>
+  <div class="tab_content" id="design_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp"><details>
+        <summary>注意</summary>
+        <p>Down prediction</p>
+        <p>Ⅰ⇛positive observation,growth mindset</p>
+        <p>i⇛debias guide,story teller</p>
+        <p>Bad habit</p>
+        <p>a⇛procrastination<br>perfectionism</br></p>
+        <p>β⇛self complaints<br>rumination </p></br>
+        <p>Attention resource</p>
+        <p>(常識推論、心的制約、気分一致効果、認知的不協和)</p></p>
+    </div>
+</details></div>
+</div>
+
+
+<!-------- tabs2--------------->
+
+
+
+  
+
+  
+  
+  <!---tab-style----->
+<style>  
+  /*タブ切り替え全体のスタイル*/
+  .tabs2 {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item2 {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item2:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item2"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content2 {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all2:checked ~ #all2_content,
+  #programming2:checked ~ #programming2_content,
+  #design2:checked ~ #design2_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs2 input:checked + .tab_item2 {
+    background-color: #5ab4bd;
+    color: #fff;
+  }</style>
+<!-------- tab-------->
+<div class="tabs2">
+  <input id="all2" type="radio" name="tab_item2" checked>
+  <label class="tab_item2" for="all2">総合</label>
+  <input id="programming2" type="radio" name="tab_item2">
+  <label class="tab_item2" for="programming2">Debias guide</label>
+  <input id="design2" type="radio" name="tab_item2">
+  <label class="tab_item2" for="design2">注意</label>
+  <div class="tab_content2" id="all2_content">
+    <div class="tab_content2_description">
+      <p class="c-txtsp2">総合の内容がここに入ります</p>
+    </div>
+  </div>
+  <div class="tab_content2" id="programming2_content">
+    <div class="tab_content2_description">
+      <p class="c-txtsp2">
+        <details>
+          <summary>Debias guide</summary>
+        
+        <p>Education<br>バイアスの存在を<br>知ることが大切。</p></br>
+        
+        <p>勉強時間の短い人や<br>継続していない人は<br>バイアスに<br>かかりやすい。</br></p>
+        
+        <p>統計学の<br>簡単な勉強などで<br>学習（勉強）の継続を<br>することが大切</br><br>自分は分かっている<br>と思ってはいけない。</br></p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>one at a time strategy <br>一個一個の選択肢を<br>一つ一つ吟味する。</br><br>想像力を働かせて<br>常に新しい視点で<br>毎回見る</br></p>
+        
+        
+        
+        
+        <form>choice A：	<input type="text" >
+        
+          <br>choice B：	<input type="text" >
+        </br>
+        </form>
+        
+        <form>choice C：	<input type="text" >
+        
+          </form>
+        
+        
+        
+        <br></br>
+        
+        <p>positive hindsight<br>自分の判断や<br>行動が間違っているんじゃないか<br>ということを<br>前向きに考えよう</br>前向きに失敗した未来を創造する。</p>
+        
+        
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <br></br>
+        
+        <p>弁証法的boot strap</p>
+        
+        <p><br>直観で判断したことと</br>直感が間違っていた時の<br>意見を決める。<br>そして、その中間をとりましょう）</br></p>
+        
+        <p>最初の直感に従った場合と、<br>最悪のケースを想定した場合に</br><br>その中間をとったときにいい決断になる。</br></p>
+        
+        
+        
+        
+        <form>insight：	<input type="text" >
+        <br>
+          worst：	<input type="text" >
+        <br>
+        </form>
+        <br>
+        <form>hunch：	<input type="text" >
+        </br>
+          </form>
+        
+        
+        
+          <form>insight：	<input type="text" >
+        <br>
+            worst：	<input type="text" >
+        <br>
+          </form>
+        <br>
+          <form>hunch：	<input type="text" >
+        </br>
+            </form>
+        
+        
+        
+            <form>insight：	<input type="text" >
+        <br>
+              worst：	<input type="text" >
+        <br>
+            </form>
+        
+            <form>hunch：	<input type="text" >
+        <br>
+              </form>
+        
+        
+        
+              <form>insight：	<input type="text" >
+        <br>
+                worst：	<input type="text" >
+        <br>
+              </form>
+        
+              <form>hunch：	<input type="text" >
+        <br>
+                </form>
+        
+        
+        
+        
+        
+                <form>insight：	<input type="text" >
+        <br>
+                  worst：	<input type="text" >
+        <br>
+                </form>
+        <br>
+                <form>hunch：	<input type="text" >
+        <br>
+                  </form>
+        
+        
+        
+        <br></br>
+        
+        <p>問題分割（自信過剰と自信過少のバイアス解決法）一つの問題を細かく分割して個別に判断していく。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <br></br>
+        
+        <p>time unpacking（細かく時間を区切って判断し、行動していく）</p>
+        
+        <p>例えば１日の行動なら１０時までにここまで、１２時までにここまでというようにする。</p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>チェックリスト（一定のアクションとルールを定めておく）</p></p>
+        
+        <p>判断ミスを激減できる。チェックリストは細かく作っておくことが重要</p>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p>インセンティブ（ご褒美）</p>
+        
+        <p>モチベーションを上げる効果あり。分かっているのにできないときつかう。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>アカウンタビリティ（周りの人がどう行動しているかわかると自分のことも分かる。）</p>
+        
+        <p>自分が出来てないことが有る場合、出来ている人のまねをする。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>計画プロンプト（日々の行動の手順を定める）</p>
+        
+        <p>だれが見ても分かるようなリストがよい。</p>
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>フォースブレイク（必ず休むタイミングを入れる。）</p>
+        
+        <p>例えば、1時間に一回休憩するなど、時間で決めてしまうとよい。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <br></br>
+        
+        <p>アドバンスドチョイス（事前判断）</p>
+        
+        <p>何かしらの決断をする場合、あらかじめどうするのか一旦決めておく。</p>
+        
+        <p>例えばつらい判断をする場面が来ると想定されるときに先にどうするか決めておく。</p>
+        
+        <p>めんどくさいと思ったとき、どうするか先に決めておくなど。</p>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+          
+        diet memo<form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Goal conflict <form> goal
+        
+        obstacle
+        
+        counterpart：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Emotional planning <form> ご感想：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        疑問型selftalk <form> 
+        
+        <p>1. ゴールを達成した際の ポジティブな側面をかき出す</p>
+        <p>2. 最も大きくポジティブな 側面の対象のイメージを強化する</p> 
+        <p>3. ゴールを達成する障壁を書き出す</p>
+        <p>4. 最も大きくネガティブな 側面の対象のイメージを強化する</p>
+        
+        <p>are you sure that you can make it?</p>
+        <p>why do you want to try it?</p>
+        <p>how do you make it?</p>
+        <p>when do you try it?</p>
+        <p>How do you make it better?</p>
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        ソクラテス式問答法 <form> 
+        
+        
+        <p>1.明確化の質問 問題の具体的ゴールは何？</p>
+        
+        <p>2.前提の質問 問題でわかってないの何？</p>
+        
+        <p>3.証拠の質問 今の答えを事実にした理由は何？</p>
+        
+        <p>4.起源の質問 考えやアイデアはどこからきた？</p>
+        
+        <p>5.結果 問題を試したらどんな結果になる？
+        </p>
+        <p>6.視点の質問 他の人はなんと言うか？</p>
+        
+        <p>7.仮定の質問 今の答えの代わりは何？</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        prep do review <form>
+        
+        <p>prep</p>
+        
+        <p>これから私は何をしようとしているのか</p>
+        
+        <p>その行動の理由、目標、目的はなにか</p>
+        
+        <p>その行動はどう行うべきか</p>
+        
+        <p>その行動にはだれがかかわるか</p>
+        
+        <p>目的を達成するのに必要な情報や人はなに</p>
+        
+        
+        <p>do 実行</p>
+        
+        
+        <p>review</p>
+        
+        <p>いつどれくらいの時間で目標を達成したか</p>
+        
+        <p>準備どおりに実行できたか</p>
+        
+        <p>目標をおえた結果、前に比べてなにが変わったか</p>
+        
+        <p>準備を実行して何かわかったことはあるか</p>
+        
+        <p>次に同じことが起きた時にもっとうまくやれることはあるか</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        </details>
+        </p>
+    </div>
+  </div>
+  <div class="tab_content2" id="design2_content">
+    <div class="tab_content2_description">
+      <p class="c-txtsp2"><details>
+        <summary>注意</summary>
+        <p>Down prediction</p>
+        <p>Ⅰ⇛positive observation,growth mindset</p>
+        <p>i⇛debias guide,story teller</p>
+        <p>Bad habit</p>
+        <p>a⇛procrastination<br>perfectionism</br></p>
+        <p>β⇛self complaints<br>rumination </p></br>
+        <p>Attention resource</p>
+        <p>(常識推論、心的制約、気分一致効果、認知的不協和)</p></p>
+      </details>  </div>
+  </div>
+</div>
+</body>
+</html>
+
+<!-------- tabs3--------------->
+<html lang="ja">
+  <!DOCTYPE html>
+  <!-------- header-------->
+  <head>
+  <title>テストプログラム</title>
+  <!-------- meta-------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+  
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/qd_common.js' ></script>
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/data_loader.js' defer></script>
+      <!-- <script src='https://be0.dev/ez_api/ez_api/v1.3/newface_test/process_login.js' defer></script> -->
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/auto_loader.js' defer></script>
+  <link rel='stylesheet' href='https://be0.dev/ez_api/v1.3/newface_test/qd_login.css' />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+   <!-------- meta-------->
+  </head>
+  <!-------- header-------->
+  
+  
+  <!-------- body-------->
+  <body login='1'>
+  
+  
+  <!---tab-style----->
+<style>  
+  /*タブ切り替え全体のスタイル*/
+  .tabs3 {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item3 {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item3:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item3"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content3 {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all3:checked ~ #all3_content,
+  #programming3:checked ~ #programming3_content,
+  #design3:checked ~ #design3_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs3 input:checked + .tab_item3 {
+    background-color: #5ab4bd;
+    color: #fff;
+  }</style>
+<!-------- tab-------->
+<div class="tabs3">
+  <input id="all3" type="radio" name="tab_item3" checked>
+  <label class="tab_item3" for="all3">総合</label>
+  <input id="programming3" type="radio" name="tab_item3">
+  <label class="tab_item3" for="programming3">Debias guide</label>
+  <input id="design3" type="radio" name="tab_item3">
+  <label class="tab_item3" for="design3">注意</label>
+  <div class="tab_content3" id="all3_content">
+    <div class="tab_content3_description">
+      <p class="c-txtsp3">総合の内容がここに入ります</p>
+    </div>
+  </div>
+  <div class="tab_content3" id="programming3_content">
+    <div class="tab_content3_description">
+      <p class="c-txtsp3">
+        <details>
+          <summary>Debias guide</summary>
+        
+        <p>Education<br>バイアスの存在を<br>知ることが大切。</p></br>
+        
+        <p>勉強時間の短い人や<br>継続していない人は<br>バイアスに<br>かかりやすい。</br></p>
+        
+        <p>統計学の<br>簡単な勉強などで<br>学習（勉強）の継続を<br>することが大切</br><br>自分は分かっている<br>と思ってはいけない。</br></p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>one at a time strategy <br>一個一個の選択肢を<br>一つ一つ吟味する。</br><br>想像力を働かせて<br>常に新しい視点で<br>毎回見る</br></p>
+        
+        
+        
+        
+        <form>choice A：	<input type="text" >
+        
+          <br>choice B：	<input type="text" >
+        </br>
+        </form>
+        
+        <form>choice C：	<input type="text" >
+        
+          </form>
+        
+        
+        
+        <br></br>
+        
+        <p>positive hindsight<br>自分の判断や<br>行動が間違っているんじゃないか<br>ということを<br>前向きに考えよう</br>前向きに失敗した未来を創造する。</p>
+        
+        
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <br></br>
+        
+        <p>弁証法的boot strap</p>
+        
+        <p><br>直観で判断したことと</br>直感が間違っていた時の<br>意見を決める。<br>そして、その中間をとりましょう）</br></p>
+        
+        <p>最初の直感に従った場合と、<br>最悪のケースを想定した場合に</br><br>その中間をとったときにいい決断になる。</br></p>
+        
+        
+        
+        
+        <form>insight：	<input type="text" >
+        <br>
+          worst：	<input type="text" >
+        <br>
+        </form>
+        <br>
+        <form>hunch：	<input type="text" >
+        </br>
+          </form>
+        
+        
+        
+          <form>insight：	<input type="text" >
+        <br>
+            worst：	<input type="text" >
+        <br>
+          </form>
+        <br>
+          <form>hunch：	<input type="text" >
+        </br>
+            </form>
+        
+        
+        
+            <form>insight：	<input type="text" >
+        <br>
+              worst：	<input type="text" >
+        <br>
+            </form>
+        
+            <form>hunch：	<input type="text" >
+        <br>
+              </form>
+        
+        
+        
+              <form>insight：	<input type="text" >
+        <br>
+                worst：	<input type="text" >
+        <br>
+              </form>
+        
+              <form>hunch：	<input type="text" >
+        <br>
+                </form>
+        
+        
+        
+        
+        
+                <form>insight：	<input type="text" >
+        <br>
+                  worst：	<input type="text" >
+        <br>
+                </form>
+        <br>
+                <form>hunch：	<input type="text" >
+        <br>
+                  </form>
+        
+        
+        
+        <br></br>
+        
+        <p>問題分割（自信過剰と自信過少のバイアス解決法）一つの問題を細かく分割して個別に判断していく。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <br></br>
+        
+        <p>time unpacking（細かく時間を区切って判断し、行動していく）</p>
+        
+        <p>例えば１日の行動なら１０時までにここまで、１２時までにここまでというようにする。</p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>チェックリスト（一定のアクションとルールを定めておく）</p></p>
+        
+        <p>判断ミスを激減できる。チェックリストは細かく作っておくことが重要</p>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p>インセンティブ（ご褒美）</p>
+        
+        <p>モチベーションを上げる効果あり。分かっているのにできないときつかう。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>アカウンタビリティ（周りの人がどう行動しているかわかると自分のことも分かる。）</p>
+        
+        <p>自分が出来てないことが有る場合、出来ている人のまねをする。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>計画プロンプト（日々の行動の手順を定める）</p>
+        
+        <p>だれが見ても分かるようなリストがよい。</p>
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>フォースブレイク（必ず休むタイミングを入れる。）</p>
+        
+        <p>例えば、1時間に一回休憩するなど、時間で決めてしまうとよい。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <br></br>
+        
+        <p>アドバンスドチョイス（事前判断）</p>
+        
+        <p>何かしらの決断をする場合、あらかじめどうするのか一旦決めておく。</p>
+        
+        <p>例えばつらい判断をする場面が来ると想定されるときに先にどうするか決めておく。</p>
+        
+        <p>めんどくさいと思ったとき、どうするか先に決めておくなど。</p>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+          
+        diet memo<form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Goal conflict <form> goal
+        
+        obstacle
+        
+        counterpart：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Emotional planning <form> ご感想：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        疑問型selftalk <form> 
+        
+        <p>1. ゴールを達成した際の ポジティブな側面をかき出す</p>
+        <p>2. 最も大きくポジティブな 側面の対象のイメージを強化する</p> 
+        <p>3. ゴールを達成する障壁を書き出す</p>
+        <p>4. 最も大きくネガティブな 側面の対象のイメージを強化する</p>
+        
+        <p>are you sure that you can make it?</p>
+        <p>why do you want to try it?</p>
+        <p>how do you make it?</p>
+        <p>when do you try it?</p>
+        <p>How do you make it better?</p>
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        ソクラテス式問答法 <form> 
+        
+        
+        <p>1.明確化の質問 問題の具体的ゴールは何？</p>
+        
+        <p>2.前提の質問 問題でわかってないの何？</p>
+        
+        <p>3.証拠の質問 今の答えを事実にした理由は何？</p>
+        
+        <p>4.起源の質問 考えやアイデアはどこからきた？</p>
+        
+        <p>5.結果 問題を試したらどんな結果になる？
+        </p>
+        <p>6.視点の質問 他の人はなんと言うか？</p>
+        
+        <p>7.仮定の質問 今の答えの代わりは何？</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        prep do review <form>
+        
+        <p>prep</p>
+        
+        <p>これから私は何をしようとしているのか</p>
+        
+        <p>その行動の理由、目標、目的はなにか</p>
+        
+        <p>その行動はどう行うべきか</p>
+        
+        <p>その行動にはだれがかかわるか</p>
+        
+        <p>目的を達成するのに必要な情報や人はなに</p>
+        
+        
+        <p>do 実行</p>
+        
+        
+        <p>review</p>
+        
+        <p>いつどれくらいの時間で目標を達成したか</p>
+        
+        <p>準備どおりに実行できたか</p>
+        
+        <p>目標をおえた結果、前に比べてなにが変わったか</p>
+        
+        <p>準備を実行して何かわかったことはあるか</p>
+        
+        <p>次に同じことが起きた時にもっとうまくやれることはあるか</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        </details>
+        </p>
+    </div>
+  </div>
+  <div class="tab_content3" id="design3_content">
+    <div class="tab_content3_description">
+      <p class="c-txtsp3"><details>
+        <summary>Creativity</summary>
+        <br>創造性を発揮するために</br>
+        <br>必要な14の要素</br>
+        <br>1 積極的行動と忍耐</br>
+        <br>2 不確実性に対する柔軟性</br>
+        <br>3 特定のジャンルの知識と経験</br>
+        <br>4 IQとメンタルの健全さ</br>
+        <br>5 結果を求めて行動して形にすること</br>
+        <br>6 他人の目からの自由と独立</br>
+        <br>7 意図的に没頭することと達成感情</br>
+        <br>8 オリジナリティ</br>
+        <br>9 前進と成長の感覚</br>
+        <br>10 他者とのアイデアのシェアとコミュニケーション</br>
+        <br>11 完璧主義をやめて時に無意識に委ねる</br>
+        <br>12 潜在価値の評価</br>
+        <br>13 他者への貢献</br>
+        <br>14 多様性</br>
+</details> </div>
+  </div>
+</div>
+</body>
+</html>
+
+<!-------- tabs4--------------->
+<html lang="ja">
+  <!DOCTYPE html>
+  <!-------- header-------->
+  <head>
+  <title>テストプログラム</title>
+  <!-------- meta-------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+  
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/qd_common.js' ></script>
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/data_loader.js' defer></script>
+      <!-- <script src='https://be0.dev/ez_api/ez_api/v1.3/newface_test/process_login.js' defer></script> -->
+  <script src='https://be0.dev/ez_api/v1.3/newface_test/auto_loader.js' defer></script>
+  <link rel='stylesheet' href='https://be0.dev/ez_api/v1.3/newface_test/qd_login.css' />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+   <!-------- meta-------->
+  </head>
+  <!-------- header-------->
+  
+  
+  <!-------- body-------->
+  <body login='1'>
+  
+  
+  <!---tab-style----->
+<style>  
+  /*タブ切り替え全体のスタイル*/
+  .tabs4 {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item4 {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item4:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item4"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content4 {
+    display: none;
+    padding: 0px 0px 0;
+    clear: both;
+    overflow: hidden;
+    margin:0;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #all4:checked ~ #all4_content,
+  #programming4:checked ~ #programming4_content,
+  #design4:checked ~ #design4_content {
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs4 input:checked + .tab_item4 {
+    background-color: #5ab4bd;
+    color: #fff;
+  }</style>
+<!-------- tab-------->
+<div class="tabs4">
+  <input id="all4" type="radio" name="tab_item4" checked>
+  <label class="tab_item4" for="all4">総合</label>
+  <input id="programming4" type="radio" name="tab_item4">
+  <label class="tab_item4" for="programming4">Debias guide</label>
+  <input id="design4" type="radio" name="tab_item4">
+  <label class="tab_item4" for="design4">注意</label>
+  <div class="tab_content4" id="all4_content">
+    <div class="tab_content4_description">
+      <p class="c-txtsp4">
+       <details><summary>編集モード</summary> <input type='radio' name='edit' checked><span>全部閉じる</span>
+        
+        <style>
+        
+        @media screen and (max-width: 640px) {
+
+  .scroll {
+
+    overflow-y: auto;
+          [table]{
+            display:table;
+            
+          border-collapse: collapse;
+          border-spacing: 0;
+          }
+          [tr]{
+            display:table-row;
+            
+          }
+          [td]{
+            display:table-cell;
+            border:1px solid gray;
+            
+          }
+          [tr]>*:not([td]){
+            display:none;
+            
+          }
+        
+          input[name='edit']:checked+span{
+            display:none;
+          }
+        
+          [view]>input[name='edit']:checked ~ * [mode='view'],
+          [view]>input[name='edit']:not(:checked) ~ * [mode='edit']{
+            display:none;
+          }
+        
+        
+        </style>
+        
+        
+        <div class="testprogram">
+              <div table class="row">
+            　<div tr>
+            　　<div td>id </div>
+            　　<div td>商品名</div>
+            　　<div td>リンク</div>
+            　　<div td>写真</div>
+            　　<div td>価格</div>
+            　　<div td></div>
+            　</div>
+            　<div tr type='format' view='products' load_when_visible load_on_start>
+                  <input type='hidden' qd_params load_on_change data-place='東京'>
+        
+                  <input type='radio' name='edit'><span>編集モードに</span>
+        
+        
+                  　　<div td name='id' mode='edit'></div>
+                  <!-- 　　<td name='product_name'></td> -->
+                  　　<div td >
+                      <input mode='edit' type='text' name='product_name' onInput='updateValue(this);'>
+                      <span  mode='view' name='product_name'></span>
+                    </div>
+                  　　<div td>
+                        <span  name='link'></span>
+                      </div>
+                  　　<div td><img name='photo'></div>
+                  　　<div td>
+                        <span mode='view' name='price'></span>
+                        <input mode='edit' type='text' name='price' onInput='updateValue(this);'>円
+                      </div>
+                      　　<div td>
+                        <button mode='edit'  onClick='ez_update(this);'>Update</button>
+                        <button mode='view' onClick='this.parentNode.parentNode.querySelector(":scope>[name=\"edit\"]").click()'>編集</button>
+                      </div>
+        
+        
+                  　　
+                  </div>
+              </div>
+        
+        <style>
+        
+        .testprogram{
+            text-align:left;
+            font-size:150px;
+            display:inline-block;
+        }
+        .row{
+            font-size:15px;
+            display:inline-block;
+        }
+            img{
+                max-width:60px;
+            }
+            
+          
+            table.row th,
+        table.row td{
+        
+          width:100%;
+        
+          display:block;
+        
+        text-align:left;
+        }
+            
+            table{
+          width: 100%;
+          border-collapse:collapse;
+          border-spacing: 0;
+        }
+        
+        table th:first-child{
+          border-radius: 5px 0 0 0;
+        }
+        
+        table th:last-child{
+          border-radius: 0 5px 0 0;
+          border-right: 1px solid #3c6690;
+        }
+        
+        table th{
+          text-align: center;
+          color:white;
+          background: linear-gradient(#829ebc,#225588);
+          border-left: 1px solid #3c6690;
+          border-top: 1px solid #3c6690;
+          border-bottom: 1px solid #3c6690;
+          box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+          width: 25%;
+          padding: 10px 0;
+        }
+        
+        table td{
+          text-align: center;
+          border-left: 1px solid #a8b7c5;
+          border-bottom: 1px solid #a8b7c5;
+          border-top:none;
+          box-shadow: 0px -3px 5px 1px #eee inset;
+          width: 25%;
+          padding: 10px 0;
+        }
+        
+        table td:last-child{
+          border-right: 1px solid #a8b7c5;
+        }
+        
+        table tr:last-child td:first-child {
+          border-radius: 0 0 0 5px;
+        }
+        
+        table tr:last-child td:last-child {
+          border-radius: 0 0 5px 0;
+        }
+        </style>
+        </div>
+          <!------------------------date---------------------------------->
+        
+        <div class="date">
+        <style>
+        
+        
+        h1{
+          text-align:left;
+          width:300px;
+          margin:0;
+          padding: 1rem 2rem; border-top: 4px solid #d8dcdc; 
+          border-right: 4px solid #666; 
+          border-bottom: 4px solid #333; 
+          border-left: 4px solid #868888;
+          border-radius: 0; 
+          background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%); 
+          background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%); 
+        } 
+        
+        
+        </style>
+        </p>
+    </div></details>
+  </div>
+  <div class="tab_content4" id="programming4_content">
+    <div class="tab_content4_description">
+      <p class="c-txtsp4">
+        <details>
+          <summary>Debias guide</summary>
+        
+        <p>Education<br>バイアスの存在を<br>知ることが大切。</p></br>
+        
+        <p>勉強時間の短い人や<br>継続していない人は<br>バイアスに<br>かかりやすい。</br></p>
+        
+        <p>統計学の<br>簡単な勉強などで<br>学習（勉強）の継続を<br>することが大切</br><br>自分は分かっている<br>と思ってはいけない。</br></p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>one at a time strategy <br>一個一個の選択肢を<br>一つ一つ吟味する。</br><br>想像力を働かせて<br>常に新しい視点で<br>毎回見る</br></p>
+        
+        
+        
+        
+        <form>choice A：	<input type="text" >
+        
+          <br>choice B：	<input type="text" >
+        </br>
+        </form>
+        
+        <form>choice C：	<input type="text" >
+        
+          </form>
+        
+        
+        
+        <br></br>
+        
+        <p>positive hindsight<br>自分の判断や<br>行動が間違っているんじゃないか<br>ということを<br>前向きに考えよう</br>前向きに失敗した未来を創造する。</p>
+        
+        
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <br></br>
+        
+        <p>弁証法的boot strap</p>
+        
+        <p><br>直観で判断したことと</br>直感が間違っていた時の<br>意見を決める。<br>そして、その中間をとりましょう）</br></p>
+        
+        <p>最初の直感に従った場合と、<br>最悪のケースを想定した場合に</br><br>その中間をとったときにいい決断になる。</br></p>
+        
+        
+        
+        
+        <form>insight：	<input type="text" >
+        <br>
+          worst：	<input type="text" >
+        <br>
+        </form>
+        <br>
+        <form>hunch：	<input type="text" >
+        </br>
+          </form>
+        
+        
+        
+          <form>insight：	<input type="text" >
+        <br>
+            worst：	<input type="text" >
+        <br>
+          </form>
+        <br>
+          <form>hunch：	<input type="text" >
+        </br>
+            </form>
+        
+        
+        
+            <form>insight：	<input type="text" >
+        <br>
+              worst：	<input type="text" >
+        <br>
+            </form>
+        
+            <form>hunch：	<input type="text" >
+        <br>
+              </form>
+        
+        
+        
+              <form>insight：	<input type="text" >
+        <br>
+                worst：	<input type="text" >
+        <br>
+              </form>
+        
+              <form>hunch：	<input type="text" >
+        <br>
+                </form>
+        
+        
+        
+        
+        
+                <form>insight：	<input type="text" >
+        <br>
+                  worst：	<input type="text" >
+        <br>
+                </form>
+        <br>
+                <form>hunch：	<input type="text" >
+        <br>
+                  </form>
+        
+        
+        
+        <br></br>
+        
+        <p>問題分割（自信過剰と自信過少のバイアス解決法）一つの問題を細かく分割して個別に判断していく。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>Question：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <br></br>
+        
+        <p>time unpacking（細かく時間を区切って判断し、行動していく）</p>
+        
+        <p>例えば１日の行動なら１０時までにここまで、１２時までにここまでというようにする。</p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        <form>time：	<input type="text" >
+        
+          action：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>チェックリスト（一定のアクションとルールを定めておく）</p></p>
+        
+        <p>判断ミスを激減できる。チェックリストは細かく作っておくことが重要</p>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>if：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <p>インセンティブ（ご褒美）</p>
+        
+        <p>モチベーションを上げる効果あり。分かっているのにできないときつかう。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>アカウンタビリティ（周りの人がどう行動しているかわかると自分のことも分かる。）</p>
+        
+        <p>自分が出来てないことが有る場合、出来ている人のまねをする。</p>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>計画プロンプト（日々の行動の手順を定める）</p>
+        
+        <p>だれが見ても分かるようなリストがよい。</p>
+        
+        <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+        
+        <p></p>
+        
+        <br></br>
+        
+        <p>フォースブレイク（必ず休むタイミングを入れる。）</p>
+        
+        <p>例えば、1時間に一回休憩するなど、時間で決めてしまうとよい。</p>
+        
+        <p></p>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>time：	<input type="text" >
+        
+          break：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <br></br>
+        
+        <p>アドバンスドチョイス（事前判断）</p>
+        
+        <p>何かしらの決断をする場合、あらかじめどうするのか一旦決めておく。</p>
+        
+        <p>例えばつらい判断をする場面が来ると想定されるときに先にどうするか決めておく。</p>
+        
+        <p>めんどくさいと思ったとき、どうするか先に決めておくなど。</p>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+        
+        
+        
+        
+        <form>choice：	<input type="text" >
+        
+          then：	<input type="text" >
+        
+        </form>
+        
+          
+        diet memo<form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Goal conflict <form> goal
+        
+        obstacle
+        
+        counterpart：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        Emotional planning <form> ご感想：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        疑問型selftalk <form> 
+        
+        <p>1. ゴールを達成した際の ポジティブな側面をかき出す</p>
+        <p>2. 最も大きくポジティブな 側面の対象のイメージを強化する</p> 
+        <p>3. ゴールを達成する障壁を書き出す</p>
+        <p>4. 最も大きくネガティブな 側面の対象のイメージを強化する</p>
+        
+        <p>are you sure that you can make it?</p>
+        <p>why do you want to try it?</p>
+        <p>how do you make it?</p>
+        <p>when do you try it?</p>
+        <p>How do you make it better?</p>
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        ソクラテス式問答法 <form> 
+        
+        
+        <p>1.明確化の質問 問題の具体的ゴールは何？</p>
+        
+        <p>2.前提の質問 問題でわかってないの何？</p>
+        
+        <p>3.証拠の質問 今の答えを事実にした理由は何？</p>
+        
+        <p>4.起源の質問 考えやアイデアはどこからきた？</p>
+        
+        <p>5.結果 問題を試したらどんな結果になる？
+        </p>
+        <p>6.視点の質問 他の人はなんと言うか？</p>
+        
+        <p>7.仮定の質問 今の答えの代わりは何？</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        prep do review <form>
+        
+        <p>prep</p>
+        
+        <p>これから私は何をしようとしているのか</p>
+        
+        <p>その行動の理由、目標、目的はなにか</p>
+        
+        <p>その行動はどう行うべきか</p>
+        
+        <p>その行動にはだれがかかわるか</p>
+        
+        <p>目的を達成するのに必要な情報や人はなに</p>
+        
+        
+        <p>do 実行</p>
+        
+        
+        <p>review</p>
+        
+        <p>いつどれくらいの時間で目標を達成したか</p>
+        
+        <p>準備どおりに実行できたか</p>
+        
+        <p>目標をおえた結果、前に比べてなにが変わったか</p>
+        
+        <p>準備を実行して何かわかったことはあるか</p>
+        
+        <p>次に同じことが起きた時にもっとうまくやれることはあるか</p>
+        
+        
+        
+        <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+        
+        
+        
+        </details>
+        </p>
+    </div>
+  </div>
+  <div class="tab_content4" id="design4_content">
+    <div class="tab_content4_description">
+      <p class="c-txtsp4"><details>
+        <summary>注意</summary>
+        <p>Down prediction</p>
+        <p>Ⅰ⇛positive observation,growth mindset</p>
+        <p>i⇛debias guide,story teller</p>
+        <p>Bad habit</p>
+        <p>a⇛procrastination<br>perfectionism</br></p>
+        <p>β⇛self complaints<br>rumination </p></br>
+        <p>Attention resource</p>
+        <p>(常識推論、心的制約、気分一致効果、認知的不協和)</p></p>
+      </details>  </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+<!-------- ambivalent381-1388-------->
+<html lang="ja">
+<!DOCTYPE html>
+<!-------- header-------->
+<head>
+<title>テストプログラム</title>
+<!-------- meta-------->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 
+
+<script src='https://be0.dev/ez_api/v1.3/newface_test/qd_common.js' ></script>
+<script src='https://be0.dev/ez_api/v1.3/newface_test/data_loader.js' defer></script>
+    <!-- <script src='https://be0.dev/ez_api/ez_api/v1.3/newface_test/process_login.js' defer></script> -->
+<script src='https://be0.dev/ez_api/v1.3/newface_test/auto_loader.js' defer></script>
+<link rel='stylesheet' href='https://be0.dev/ez_api/v1.3/newface_test/qd_login.css' />
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+ <!-------- meta-------->
+</head>
+<!-------- header-------->
+
+
+<!-------- body-------->
+<body login='1'>
+
+<input type='radio' name='edit' checked><span>全部閉じる</span>
+
+<!---tab-style----->
+    
+  <!----２--------------------date----------------------------------->
+  <div class="date">
+    <style>
+    
+    
+    h1{
+      text-align:left;
+      width:300px;
+      margin:0;
+      padding: 1rem 2rem; border-top: 4px solid #d8dcdc; 
+      border-right: 4px solid #666; 
+      border-bottom: 4px solid #333; 
+      border-left: 4px solid #868888;
+      border-radius: 0; 
+      background-image: -webkit-linear-gradient(135deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%); 
+      background-image: linear-gradient(-45deg, #ccc 0%, #868888 20%, #d8dcdc 34%, white 53%, #ccc 100%); 
+    } 
+    
+    
+    </style>
+    
+    <h1>
+    <details>
+    <summary>
+    <a>年 / 月 / 日 +時:分</summary><input type="datetime-local"></label>
+    </a>
+    <!-------- 選択フォーム -------->
+    <form name="myForm">
+    <select name="select0" onchange="setOption(1)">
+    </select>
+    <select name="select1" onchange="setOption(2)">
+    </select>
+    <select name="select2" onchange="outputSelection()">
+    </select>
+    <br><br>
+    
+    </details>
+    </h1>
+    </div>
+    <!---３----------------------choice---------------------------------->
+    <div class="choice">
+    <h1>
+    <details><summary><span></span>
+    選択内容</summary>
+    <input type="text" name="output">
+    </form>
+    
+    <form>
+    
+        <select name="select1">
+    
+    　　　　<option>1</option>
+    　　　　<option>2</option>
+    　　　　<option>3</option>
+    　　　　<option>4</option>
+    　　　　<option>5</option>
+    　　　　<option>6</option>
+    　　　　<option>7</option>
+    　　　　<option>8</option>
+    　　　　<option>9</option>
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+          <option>50〜</option>
+    
+        </select>
+        
+        
+        
+    Down prediction <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+      
+    <form>
+    
+        <select name="select1">
+    
+    　　　　<option>1</option>
+    　　　　<option>2</option>
+    　　　　<option>3</option>
+    　　　　<option>4</option>
+    　　　　<option>5</option>
+    　　　　<option>6</option>
+    　　　　<option>7</option>
+    　　　　<option>8</option>
+    　　　　<option>9</option>
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>40</option>
+         <option>50〜</option>
+    
+        </select> 
+    bad habit <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    
+    
+    <!-------- スクリプト：選択管理 -------->
+    <script type="text/javascript">
+    
+    /*---- select リストを取得 ----*/
+    
+    var select = document.myForm.getElementsByTagName( "select" );
+    
+    /*---- オプションリストを生成 ----*/
+    
+    var option = new Array();
+    option[ 0 ] = [
+    { "text": "Down prediction", "value": "Down prediction" },
+    { "text": "Bad habit", "value": "Bad habit" }
+    ];
+    option[ 1 ] = [
+    { "text": "Ⅰ", "value": "Ⅰ", "root": "Down prediction" },
+    { "text": "ⅰ", "value": "ⅰ", "root": "Down prediction" },
+    { "text": "a", "value": "a", "root": "Bad habit" },
+    { "text": "α", "value": "α", "root": "Bad habit" }
+    ];
+    option[ 2 ] = [
+    { "text": "positive observation", "value": "positive observation ", "root": "Down prediction,Ⅰ" },
+    { "text": "growth mindset", "value": "growth mindset", "root": "Down prediction,Ⅰ" },
+    { "text": "debias guide", "value": "debias guide", "root": "Down prediction,ⅰ" },
+    { "text": "story teller", "value": "story teller", "root": "Down prediction,ⅰ" },
+    { "text": "procrastination", "value": "procrastination", "root": "Bad habit,a" },
+    { "text": "perfectionism", "value": "perfectionism", "root": "Bad habit,a" },
+    { "text": "self complaints", "value": "self complaints", "root": "Bad habit,α" },
+    { "text": "rumination ", "value": "rumination", "root": "Bad habit,α" }
+    ];
+    
+    /*----[ 関数 : オプションをセット ]----*/
+    
+    function setOption( Idx ){
+    for(var i=Idx;i<select.length;i++){
+    select[ i ].options.length = 0;
+    for(var ii=0;ii<option[ i ].length;ii++){
+    var root = option[ i ][ ii ].root.split( "," );
+    for(var err=0,iii=0;iii<root.length;iii++){
+    err += root[ iii ]==select[ iii ].value ? 0 : 1 ;
+    }
+    if( ! err ){
+    select[ i ].appendChild(
+    new Option( option[ i ][ ii ].text, option[ i ][ ii ].value )
+    );
+    }
+    }// ii
+    }// i
+    outputSelection();
+    }
+    
+    /*----[ 関数 : 結果を表示 ]----*/
+    
+    function outputSelection(){
+    var str = "";
+    for(var i=0;i<select.length;i++){
+    str += select[ i ].value+( i<select.length-1 ? "," : "" );
+    }
+    document.myForm.output.value = str;
+    }
+    
+    /*----[ 初期化 ]----*/
+    for(var i=0;i<option[ 0 ].length;i++){
+    select[ 0 ].appendChild( new Option( option[ 0 ][ i ].text, option[ 0 ][ i ].value ) );
+    }
+    setOption( 1 );
+    
+    </script>
+    
+    </details>
+    </h1>
+    <h1>
+    <details>
+    <summary>注意</summary>
+    <p>Down prediction</p>
+    <p>Ⅰ⇛positive observation,growth mindset</p>
+    <p>i⇛debias guide,story teller</p>
+    <p>Bad habit</p>
+    <p>a⇛procrastination<br>perfectionism</br></p>
+    <p>β⇛self complaints<br>rumination </p></br>
+    <p>Attention resource</p>
+    <p>(常識推論、心的制約、気分一致効果、認知的不協和)</p>
+    
+    </details>
+    </h1>
+    </div>
+  
+    <!--４------------------------debias--------------------------------->
+    <div class="debiasguide">
+    <h1>
+    
+    <details>
+      <summary>Debias guide</summary>
+    
+    <p>Education<br>バイアスの存在を<br>知ることが大切。</p></br>
+    
+    <p>勉強時間の短い人や<br>継続していない人は<br>バイアスに<br>かかりやすい。</br></p>
+    
+    <p>統計学の<br>簡単な勉強などで<br>学習（勉強）の継続を<br>することが大切</br><br>自分は分かっている<br>と思ってはいけない。</br></p>
+    
+    <p></p>
+    
+    <br></br>
+    
+    <p>one at a time strategy <br>一個一個の選択肢を<br>一つ一つ吟味する。</br><br>想像力を働かせて<br>常に新しい視点で<br>毎回見る</br></p>
+    
+    
+    
+    
+    <form>choice A：	<input type="text" >
+    
+      <br>choice B：	<input type="text" >
+    </br>
+    </form>
+    
+    <form>choice C：	<input type="text" >
+    
+      </form>
+    
+    
+    
+    <br></br>
+    
+    <p>positive hindsight<br>自分の判断や<br>行動が間違っているんじゃないか<br>ということを<br>前向きに考えよう</br>前向きに失敗した未来を創造する。</p>
+    
+    
+    
+    <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+    
+    <p></p>
+    
+    <br></br>
+    
+    <br></br>
+    
+    <p>弁証法的boot strap</p>
+    
+    <p><br>直観で判断したことと</br>直感が間違っていた時の<br>意見を決める。<br>そして、その中間をとりましょう）</br></p>
+    
+    <p>最初の直感に従った場合と、<br>最悪のケースを想定した場合に</br><br>その中間をとったときにいい決断になる。</br></p>
+    
+    
+    
+    
+    <form>insight：	<input type="text" >
+    <br>
+      worst：	<input type="text" >
+    <br>
+    </form>
+    <br>
+    <form>hunch：	<input type="text" >
+    </br>
+      </form>
+    
+    
+    
+      <form>insight：	<input type="text" >
+    <br>
+        worst：	<input type="text" >
+    <br>
+      </form>
+    <br>
+      <form>hunch：	<input type="text" >
+    </br>
+        </form>
+    
+    
+    
+        <form>insight：	<input type="text" >
+    <br>
+          worst：	<input type="text" >
+    <br>
+        </form>
+    
+        <form>hunch：	<input type="text" >
+    <br>
+          </form>
+    
+    
+    
+          <form>insight：	<input type="text" >
+    <br>
+            worst：	<input type="text" >
+    <br>
+          </form>
+    
+          <form>hunch：	<input type="text" >
+    <br>
+            </form>
+    
+    
+    
+    
+    
+            <form>insight：	<input type="text" >
+    <br>
+              worst：	<input type="text" >
+    <br>
+            </form>
+    <br>
+            <form>hunch：	<input type="text" >
+    <br>
+              </form>
+    
+    
+    
+    <br></br>
+    
+    <p>問題分割（自信過剰と自信過少のバイアス解決法）一つの問題を細かく分割して個別に判断していく。</p>
+    
+    <p></p>
+    
+    
+    
+    <form>Question：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <form>Question：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>Question：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>Question：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>Question：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <br></br>
+    
+    <p>time unpacking（細かく時間を区切って判断し、行動していく）</p>
+    
+    <p>例えば１日の行動なら１０時までにここまで、１２時までにここまでというようにする。</p>
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      action：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      action：	<input type="text" >
+    
+    </form>
+    
+    <form>time：	<input type="text" >
+    
+      action：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <p></p>
+    
+    <br></br>
+    
+    <p>チェックリスト（一定のアクションとルールを定めておく）</p></p>
+    
+    <p>判断ミスを激減できる。チェックリストは細かく作っておくことが重要</p>
+    
+    
+    
+    
+    
+    <form>if：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <form>if：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>if：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>if：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>if：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <p>インセンティブ（ご褒美）</p>
+    
+    <p>モチベーションを上げる効果あり。分かっているのにできないときつかう。</p>
+    
+    <p></p>
+    
+    <br></br>
+    
+    <p>アカウンタビリティ（周りの人がどう行動しているかわかると自分のことも分かる。）</p>
+    
+    <p>自分が出来てないことが有る場合、出来ている人のまねをする。</p>
+    
+    <p></p>
+    
+    <br></br>
+    
+    <p>計画プロンプト（日々の行動の手順を定める）</p>
+    
+    <p>だれが見ても分かるようなリストがよい。</p>
+    
+    <form> <br> <textarea name="kanso" rows="10" cols="25"></textarea></form>
+    
+    <p></p>
+    
+    <br></br>
+    
+    <p>フォースブレイク（必ず休むタイミングを入れる。）</p>
+    
+    <p>例えば、1時間に一回休憩するなど、時間で決めてしまうとよい。</p>
+    
+    <p></p>
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      break：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      break：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      break：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>time：	<input type="text" >
+    
+      break：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <br></br>
+    
+    <p>アドバンスドチョイス（事前判断）</p>
+    
+    <p>何かしらの決断をする場合、あらかじめどうするのか一旦決めておく。</p>
+    
+    <p>例えばつらい判断をする場面が来ると想定されるときに先にどうするか決めておく。</p>
+    
+    <p>めんどくさいと思ったとき、どうするか先に決めておくなど。</p>
+    
+    
+    
+    <form>choice：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    <form>choice：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>choice：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>choice：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+    
+    
+    
+    
+    <form>choice：	<input type="text" >
+    
+      then：	<input type="text" >
+    
+    </form>
+    
+      
+    diet memo<form> <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    Goal conflict <form> goal
+    
+    obstacle
+    
+    counterpart：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    Emotional planning <form> ご感想：<br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    疑問型selftalk <form> 
+    
+    <p>1. ゴールを達成した際の ポジティブな側面をかき出す</p>
+    <p>2. 最も大きくポジティブな 側面の対象のイメージを強化する</p> 
+    <p>3. ゴールを達成する障壁を書き出す</p>
+    <p>4. 最も大きくネガティブな 側面の対象のイメージを強化する</p>
+    
+    <p>are you sure that you can make it?</p>
+    <p>why do you want to try it?</p>
+    <p>how do you make it?</p>
+    <p>when do you try it?</p>
+    <p>How do you make it better?</p>
+    
+    <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    
+    
+    ソクラテス式問答法 <form> 
+    
+    
+    <p>1.明確化の質問 問題の具体的ゴールは何？</p>
+    
+    <p>2.前提の質問 問題でわかってないの何？</p>
+    
+    <p>3.証拠の質問 今の答えを事実にした理由は何？</p>
+    
+    <p>4.起源の質問 考えやアイデアはどこからきた？</p>
+    
+    <p>5.結果 問題を試したらどんな結果になる？
+    </p>
+    <p>6.視点の質問 他の人はなんと言うか？</p>
+    
+    <p>7.仮定の質問 今の答えの代わりは何？</p>
+    
+    
+    
+    <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    prep do review <form>
+    
+    <p>prep</p>
+    
+    <p>これから私は何をしようとしているのか</p>
+    
+    <p>その行動の理由、目標、目的はなにか</p>
+    
+    <p>その行動はどう行うべきか</p>
+    
+    <p>その行動にはだれがかかわるか</p>
+    
+    <p>目的を達成するのに必要な情報や人はなに</p>
+    
+    
+    <p>do 実行</p>
+    
+    
+    <p>review</p>
+    
+    <p>いつどれくらいの時間で目標を達成したか</p>
+    
+    <p>準備どおりに実行できたか</p>
+    
+    <p>目標をおえた結果、前に比べてなにが変わったか</p>
+    
+    <p>準備を実行して何かわかったことはあるか</p>
+    
+    <p>次に同じことが起きた時にもっとうまくやれることはあるか</p>
+    
+    
+    
+    <br> <textarea name="kanso" rows="10" cols="25"></textarea><br> <input type="submit" value="送信"><input type="reset" value="リセット"> </form>
+    
+    
+    
+    </details>
+    
+    </h1>
+    
+    </div>
+    <!--５----------------------paint----------------------------------->
+    <div class="paint">
+      <style>
+      
+        body {
+         text-align:center;
+         width: 400px;
+         margin:0 auto;
+         
+        }
+        
+        h1 {
+          font-size:25px;
+          font-family: Arial, sans-serif;
+          font-weight:bold;
+        }
+          
+          
+        #canvas {
+          border:1px solid gray;
+        }
+        
+        #aaa {
+          overflow:hidden;
+          margin-top:10px;
+        }
+        
+        #bbb {
+          float: left;
+          width: 100px;
+          margin-left: 10px;
+        }
+        
+        #ccc {
+          margin-left: 200px;
+          width: 100px;
+          height: 100px;
+          cursor: pointer;
+        }
+        
+        
+        li {
+          width: 5px;
+          height: 5px;
+          display:inline-block;
+        
+        }
+        
+        #item1 {
+          float:left;
+          width:auto;
+          margin-left:50px;
+        }
+        
+        h2{
+            text-align:left;
+            padding: 1rem 3rem; color: #fff;
+            border-radius: 100vh; 
+            background-image: -webkit-gradient(linear, right top, left top, from(#9be15d), to(#00e3ae)); 
+            background-image: -webkit-linear-gradient(right, #9be15d 0%, #00e3ae 100%); 
+            background-image: linear-gradient(to left, #9be15d 0%, #00e3ae 100%); } 
+        
+        
+        </style>
+    <h2>
+    <details>
+    <summary>お絵描き:100日後にWEB屋で飯を食う</summary>
+    
+    <div id="aaa">
+      <div id="bbb">
+      <canvas id="canvas" width="200px" height="200px">残念ながらHTML5に対応していません</canvas>
+      </div>
+      <div id="ccc">
+      <ul>
+    <li style="background-color:#000000"></li>
+    <li style="background-color:#1b1b1b"></li>
+    <li style="background-color:#313131"></li>
+    <li style="background-color:#434343"></li>
+    <li style="background-color:#535353"></li>
+    <li style="background-color:#626262"></li>
+    <li style="background-color:#707070"></li>
+    <li style="background-color:#898989"></li>
+    <li style="background-color:#959595"></li>
+    <li style="background-color:#a0a0a0"></li>
+    <li style="background-color:#b5b5b5"></li>
+    <li style="background-color:#c9c9c9"></li>
+    <li style="background-color:#dcdcdc"></li>
+    <li style="background-color:#ffffff"></li>
+    <li style="background-color:#ff0000"></li>
+    <li style="background-color:#ffff00"></li>
+    <li style="background-color:#00ff00"></li>
+    <li style="background-color:#00ffff"></li>
+    <li style="background-color:#0000ff"></li>
+    <li style="background-color:#ff00ff"></li>
+    <li style="background-color:#e60012"></li>
+    <li style="background-color:#fff100"></li>
+    <li style="background-color:#009944"></li>
+    <li style="background-color:#00a0e9"></li>
+    <li style="background-color:#1d2088"></li>
+    <li style="background-color:#e4007f"></li>
+    <li style="background-color:#f29b76"></li>
+    <li style="background-color:#f6b37f"></li>
+    <li style="background-color:#facd89"></li>
+    <li style="background-color:#fff799"></li>
+    <li style="background-color:#cce198"></li>
+    <li style="background-color:#acd598"></li>
+    <li style="background-color:#89c997"></li>
+    <li style="background-color:#84ccc9"></li>
+    <li style="background-color:#7ecef4"></li>
+    <li style="background-color:#88abda"></li>
+    <li style="background-color:#8c97cb"></li>
+    <li style="background-color:#8f82bc"></li>
+    <li style="background-color:#aa89bd"></li>
+    <li style="background-color:#c490bf"></li>
+    <li style="background-color:#f19ec2"></li>
+    <li style="background-color:#f29c9f"></li>
+    <li style="background-color:#ec6941"></li>
+    <li style="background-color:#f19149"></li>
+    <li style="background-color:#f8b551"></li>
+    <li style="background-color:#fff45c"></li>
+    <li style="background-color:#b3d465"></li>
+    <li style="background-color:#80c269"></li>
+    <li style="background-color:#32b16c"></li>
+    <li style="background-color:#13b5b1"></li>
+    <li style="background-color:#00b7ee"></li>
+    <li style="background-color:#448aca"></li>
+    <li style="background-color:#556fb5"></li>
+    <li style="background-color:#5f52a0"></li>
+    <li style="background-color:#8957a1"></li>
+    <li style="background-color:#ae5da1"></li>
+    <li style="background-color:#ea68a2"></li>
+    <li style="background-color:#eb6877"></li>
+    <li style="background-color:#e60012"></li>
+    <li style="background-color:#eb6100"></li>
+    <li style="background-color:#fff100"></li>
+    <li style="background-color:#8fc31f"></li>
+    <li style="background-color:#22ac38"></li>
+    <li style="background-color:#009944"></li>
+    <li style="background-color:#009e96"></li>
+    <li style="background-color:#00a0e9"></li>
+    <li style="background-color:#0068b7"></li>
+    <li style="background-color:#00479d"></li>
+    <li style="background-color:#1d2088"></li>
+    <li style="background-color:#601986"></li>
+    <li style="background-color:#920783"></li>
+    <li style="background-color:#e4007f"></li>
+    <li style="background-color:#e5004f"></li>
+    <li style="background-color:#a40000"></li>
+    <li style="background-color:#a84200"></li>
+    <li style="background-color:#ac6a00"></li>
+    <li style="background-color:#b7aa00"></li>
+    <li style="background-color:#638c0b"></li>
+    <li style="background-color:#097c25"></li>
+    <li style="background-color:#007130"></li>
+    <li style="background-color:#00736d"></li>
+    <li style="background-color:#0075a9"></li>
+    <li style="background-color:#004986"></li>
+    <li style="background-color:#002e73"></li>
+    <li style="background-color:#100964"></li>
+    <li style="background-color:#440062"></li>
+    <li style="background-color:#6a005f"></li>
+    <li style="background-color:#a4005b"></li>
+    <li style="background-color:#a40035"></li>
+    <li style="background-color:#7d0000"></li>
+    <li style="background-color:#7f2d00"></li>
+    <li style="background-color:#834e00"></li>
+    <li style="background-color:#8a8000"></li>
+    <li style="background-color:#486a00"></li>
+    <li style="background-color:#005e15"></li>
+    <li style="background-color:#00561f"></li>
+    <li style="background-color:#005752"></li>
+    <li style="background-color:#005982"></li>
+    <li style="background-color:#003567"></li>
+    <li style="background-color:#001c58"></li>
+    <li style="background-color:#03004c"></li>
+    <li style="background-color:#31004a"></li>
+    <li style="background-color:#500047"></li>
+    <li style="background-color:#7e0043"></li>
+    <li style="background-color:#7d0022"></li>
+    <li style="background-color:#d1c0a5"></li>
+    <li style="background-color:#a6937c"></li>
+    <li style="background-color:#7e6b5a"></li>
+    <li style="background-color:#59493f"></li>
+    <li style="background-color:#362e2b"></li>
+    <li style="background-color:#cfa972"></li>
+    <li style="background-color:#b28850"></li>
+    <li style="background-color:#996c33"></li>
+    <li style="background-color:#81511c"></li>
+    <li style="background-color:#6a3906"></li>
+    <li style="background-color:#fdead6"></li>
+    <li style="background-color:#f9d9b8"></li>
+    <li style="background-color:#f5cea5"></li>
+    <li style="background-color:#f1bf8b"></li>
+    <li style="background-color:#eeb477"></li>
+    </ul>
+    
+      </div>
+    </div>
+    <div id="item">
+      <div id="item1">
+    <p>線の太さ<input type="range" min="0" max="100" value="10" id="lineWidth"><span id="lineNum">10</span></p>
+    <p>透 明 度<input type="range" min="0" max="100" value="100" id="alpha"><span id="alphaNum">100</span></p>
+      </div>
+      <div id="item2">
+      <p><button style="margin-bottom:10px;" id="undo">１つ前の状態に戻す</button></p>
+    <p><button style="width:50px;" id="clear">消去</button>  <button style="width:50px;" onclick="save()">保存</button></p>
+    
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+    
+    //canvasの読み込み設定
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    
+    //マウスを操作する
+    var mouse = {x:0,y:0,x1:0,y1:0,color:"black"};
+    var draw = false;
+    
+    //マウスの座標を取得する
+    canvas.addEventListener("mousemove",function(e) {
+      var rect = e.target.getBoundingClientRect();  
+      ctx.lineWidth = document.getElementById("lineWidth").value;
+      ctx.globalAlpha = document.getElementById("alpha").value/100;
+      
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+      
+      
+      //クリック状態なら描画をする
+      if(draw === true) {
+        ctx.beginPath();
+        ctx.moveTo(mouseX1,mouseY1);
+        ctx.lineTo(mouseX,mouseY);
+        ctx.lineCap = "round";
+        ctx.stroke();
+        mouseX1 = mouseX;
+        mouseY1 = mouseY;
+      }
+    });
+      
+      //クリックしたら描画をOKの状態にする
+      canvas.addEventListener("mousedown",function(e) {
+        draw = true;
+        mouseX1 = mouseX;
+        mouseY1 = mouseY;
+        undoImage = ctx.getImageData(0, 0,canvas.width,canvas.height);
+    });
+    
+    //クリックを離したら、描画を終了する
+    canvas.addEventListener("mouseup", function(e){
+      draw = false;
+    });
+    
+    
+    //線の太さの値を変える
+    lineWidth.addEventListener("mousemove",function(){  
+    var lineNum = document.getElementById("lineWidth").value;
+    document.getElementById("lineNum").innerHTML = lineNum;
+    });
+    
+    //透明度の値を変える
+    alpha.addEventListener("mousemove",function(){  
+    var alphaNum = document.getElementById("alpha").value;
+    document.getElementById("alphaNum").innerHTML = alphaNum;
+    });
+    
+    //色を選択
+      $('li').click(function() {
+            ctx.strokeStyle = $(this).css('background-color');
+        });
+        
+    //消去ボタンを起動する
+     $('#clear').click(function(e) {
+         if(!confirm('本当に消去しますか？')) return;
+            e.preventDefault();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+        
+    //戻るボタンを配置
+    $('#undo').click(function(e) {
+        ctx.putImageData(undoImage,0,0);
+    });
+    
+    
+    //保存する
+    function save(){
+      var can = canvas.toDataURL("image/png");
+      can = can.replace("image/png", "image/octet-stream");
+      window.open(can,"save");
+     
+    }
+    
+    //スマホ用
+      var finger=new Array;
+      for(var i=0;i<10;i++){
+        finger[i]={
+          x:0,y:0,x1:0,y1:0,
+          color:"rgb("
+          +Math.floor(Math.random()*16)*15+","
+          +Math.floor(Math.random()*16)*15+","
+          +Math.floor(Math.random()*16)*15
+          +")"
+        };
+      }
+    
+      //タッチした瞬間座標を取得
+      canvas.addEventListener("touchstart",function(e){
+        e.preventDefault();
+        var rect = e.target.getBoundingClientRect();
+        ctx.lineWidth = document.getElementById("lineWidth").value;
+        ctx.globalAlpha = document.getElementById("alpha").value/100;
+        undoImage = ctx.getImageData(0, 0,canvas.width,canvas.height);
+        for(var i=0;i<finger.length;i++){
+          finger[i].x1 = e.touches[i].clientX-rect.left;
+          finger[i].y1 = e.touches[i].clientY-rect.top;
+          
+    
+    
+        }
+      });
+    
+      //タッチして動き出したら描画
+      canvas.addEventListener("touchmove",function(e){
+        e.preventDefault();
+        var rect = e.target.getBoundingClientRect();
+        for(var i=0;i<finger.length;i++){
+          finger[i].x = e.touches[i].clientX-rect.left;
+          finger[i].y = e.touches[i].clientY-rect.top;
+          ctx.beginPath();
+          ctx.moveTo(finger[i].x1,finger[i].y1);
+          ctx.lineTo(finger[i].x,finger[i].y);
+          ctx.lineCap="round";
+          ctx.stroke();
+          finger[i].x1=finger[i].x;
+          finger[i].y1=finger[i].y;
+          
+        }
+      });
+      
+      //線の太さの値を変える
+    lineWidth.addEventListener("touchmove",function(){  
+    var lineNum = document.getElementById("lineWidth").value;
+    document.getElementById("lineNum").innerHTML = lineNum;
+    });
+    
+    //透明度の値を変える
+    alpha.addEventListener("touchmove",function(){  
+    var alphaNum = document.getElementById("alpha").value;
+    document.getElementById("alphaNum").innerHTML = alphaNum;
+    });
+     
+    
+    
+    </script>
+    
+    
+    </details>
+    </h2>
+    </div>
+    </body>
+    <!-------------------------body---------------------------------->
+    </html>
+    
